@@ -66,8 +66,8 @@ nav {
     height: 100vh;
     width: 100%;
     flex-direction: row;
-    clip-path: circle(100px at 100% -15%);
-    -webkit-clip-path: circle(100px at 100% -15%);
+    clip-path: circle(10px at 100% -15%);
+    -webkit-clip-path: circle(10px at 100% -15%);
     transition: all 1s ease-in-out;
     pointer-events: none;
     border: 1.5vh solid #fff; }
@@ -271,8 +271,7 @@ section.sp-heading {
   z-index: 2;
   display: inline;
   width: 98.4%;
-  height: 10%;
-  background-color: #37e7d9; }
+  height: 10%; }
   section.sp-heading .frontpage-heading {
     font-size: 13vh;
     font-family: "Unica One", cursive;
@@ -519,24 +518,19 @@ section.sp-showcase {
         display: none; }
       nav .nav-links li:nth-child(2)::after {
         display: none; }
-  .frontpage-container {
-    grid-template-columns: 1fr; }
-    .frontpage-container section.heading {
-      display: inline; }
-      .frontpage-container section.heading .fp-heading {
-        align-self: start; }
-        .frontpage-container section.heading .fp-heading .logo-link {
-          font-size: 5vh; }
-    .frontpage-container section.nav {
-      display: none; }
-    .frontpage-container section.showcase .fp-showcase .link-showcase {
-      text-align: center; }
+  .frontpage-container section.heading .fp-heading .frontpage-heading {
+    padding-top: 2rem;
+    font-size: 4vh; }
+  .frontpage-container section.nav {
+    display: none; }
+  .frontpage-container section.showcase .fp-showcase .link-showcase {
+    text-align: center; }
   .service-container {
     overflow: hidden;
     height: 280vh; }
     .service-container section.sp-heading .frontpage-heading {
       padding-top: 2rem;
-      font-size: 5vh; }
+      font-size: 4vh; }
     .service-container section.sp-top {
       width: 100vw; }
       .service-container section.sp-top p.text-top {
@@ -570,7 +564,7 @@ section.sp-showcase {
           border-radius: 10px; }
   .contact-container section.sp-heading .frontpage-heading {
     padding-top: 2rem;
-    font-size: 5vh; }
+    font-size: 4vh; }
   .contact-container section.contact-showcase {
     grid-template-columns: 1fr; }
     .contact-container section.contact-showcase .sc-info-h1 {

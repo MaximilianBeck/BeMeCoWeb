@@ -732,12 +732,11 @@ section.sp-showcase {
   // Frontpage //
   .frontpage-container {
     section.heading {
-      display: inline;
-
       .fp-heading {
         .frontpage-heading {
           padding-top: 2rem;
-          font-size: 3vh;
+          font-size: 4vh;
+          //border: 1px solid red;
           .logo-link {
           }
         }
