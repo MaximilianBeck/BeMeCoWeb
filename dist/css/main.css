@@ -526,7 +526,8 @@ section.sp-showcase {
   .frontpage-container section.showcase {
     grid-column-start: 1;
     grid-column-end: 6;
-    justify-self: center; }
+    justify-self: center;
+    align-self: center; }
     .frontpage-container section.showcase .fp-showcase {
       text-align: center; }
   .service-container {
