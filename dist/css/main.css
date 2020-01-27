@@ -130,8 +130,7 @@ section.heading {
   font-weight: 900; }
   section.heading .fp-heading {
     justify-self: center;
-    align-self: center;
-    z-index: 100; }
+    align-self: center; }
     section.heading .fp-heading .frontpage-heading {
       font-size: 13vh;
       font-family: "Unica One", cursive;
