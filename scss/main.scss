@@ -749,9 +749,11 @@ section.sp-showcase {
 
     // SHOWCASE //
     section.showcase {
+      grid-column-start: 1;
+      grid-column-end: 6;
       .fp-showcase {
+        text-align: center;
         .link-showcase {
-          text-align: center;
         }
       }
     }

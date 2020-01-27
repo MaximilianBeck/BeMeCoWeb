@@ -523,8 +523,11 @@ section.sp-showcase {
     font-size: 4vh; }
   .frontpage-container section.nav {
     display: none; }
-  .frontpage-container section.showcase .fp-showcase .link-showcase {
-    text-align: center; }
+  .frontpage-container section.showcase {
+    grid-column-start: 1;
+    grid-column-end: 6; }
+    .frontpage-container section.showcase .fp-showcase {
+      text-align: center; }
   .service-container {
     overflow: hidden;
     height: 280vh; }
