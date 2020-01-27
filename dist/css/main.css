@@ -525,7 +525,8 @@ section.sp-showcase {
     display: none; }
   .frontpage-container section.showcase {
     grid-column-start: 1;
-    grid-column-end: 6; }
+    grid-column-end: 6;
+    justify-self: center; }
     .frontpage-container section.showcase .fp-showcase {
       text-align: center; }
   .service-container {
