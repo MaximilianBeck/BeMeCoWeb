@@ -709,6 +709,9 @@ section.sp-showcase {
 // Media-Queries // Media-Queries // Media-Queries // Media-Queries //
 
 @media screen and (max-width: 1000px) {
+  .ct-vp {
+    height: 90vh;
+  }
   nav {
     //display: none;
     z-index: 30;
@@ -731,7 +734,6 @@ section.sp-showcase {
   }
   // Frontpage //
   .frontpage-container {
-    height: 90vh;
     section.heading {
       .fp-heading {
         .frontpage-heading {

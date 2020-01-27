@@ -506,6 +506,8 @@ section.sp-showcase {
     font-size: 2rem; }
 
 @media screen and (max-width: 1000px) {
+  .ct-vp {
+    height: 90vh; }
   nav {
     z-index: 30; }
     nav .hamburger .line {
@@ -518,21 +520,19 @@ section.sp-showcase {
         display: none; }
       nav .nav-links li:nth-child(2)::after {
         display: none; }
-  .frontpage-container {
-    height: 90vh; }
-    .frontpage-container section.heading .fp-heading .frontpage-heading {
-      padding-top: 2rem;
-      font-size: 4vh; }
-    .frontpage-container section.nav {
-      display: none; }
-    .frontpage-container section.showcase {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      justify-self: center;
-      align-self: center; }
-      .frontpage-container section.showcase .fp-showcase {
-        text-align: center;
-        width: 100%; }
+  .frontpage-container section.heading .fp-heading .frontpage-heading {
+    padding-top: 2rem;
+    font-size: 4vh; }
+  .frontpage-container section.nav {
+    display: none; }
+  .frontpage-container section.showcase {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    justify-self: center;
+    align-self: center; }
+    .frontpage-container section.showcase .fp-showcase {
+      text-align: center;
+      width: 100%; }
   .service-container {
     overflow: hidden;
     height: 280vh; }
