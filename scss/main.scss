@@ -152,11 +152,10 @@ nav {
 .frontpage-container {
   display: grid;
   justify-content: center;
-  height: 100%;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 30vh 40vh 20vh;
   font-size: 2rem;
-  justify-items: center;
+  //justify-items: center;
 }
 
 section.heading {
