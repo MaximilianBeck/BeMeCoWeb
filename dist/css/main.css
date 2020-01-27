@@ -115,7 +115,6 @@ nav {
 .frontpage-container {
   display: grid;
   justify-content: center;
-  height: 100vh;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 30vh 40vh 20vh;
   font-size: 2rem;
@@ -312,7 +311,7 @@ section.sp-top {
       position: absolute;
       display: block;
       left: 0;
-      background-color: #ff4d00;
+      background-color: #fff;
       height: 0.375rem;
       width: 7vh; }
     section.sp-top p.text-top .sp-2 {
