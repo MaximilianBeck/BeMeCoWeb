@@ -711,7 +711,7 @@ section.sp-showcase {
 @media screen and (max-width: 1000px) {
   nav {
     //display: none;
-    z-index: 20;
+    z-index: 30;
     .hamburger {
       .line {
         width: 3rem;
@@ -731,6 +731,7 @@ section.sp-showcase {
   }
   // Frontpage //
   .frontpage-container {
+    height: 90vh;
     section.heading {
       .fp-heading {
         .frontpage-heading {
