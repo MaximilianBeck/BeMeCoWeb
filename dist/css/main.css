@@ -529,7 +529,8 @@ section.sp-showcase {
     justify-self: center;
     align-self: center; }
     .frontpage-container section.showcase .fp-showcase {
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
   .service-container {
     overflow: hidden;
     height: 280vh; }
