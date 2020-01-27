@@ -506,8 +506,6 @@ section.sp-showcase {
     font-size: 2rem; }
 
 @media screen and (max-width: 1000px) {
-  .ct-vp {
-    height: 100vh; }
   nav {
     z-index: 30; }
     nav .hamburger .line {
