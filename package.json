@@ -1,0 +1,19 @@
+{
+  "name": "bemeco",
+  "version": "1.0.0",
+  "main": "index.js",
+  "homepage": "https://MaximilianBeck.github.io/bemeco",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "M.BECK",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
