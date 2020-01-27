@@ -80,8 +80,8 @@ nav {
     height: 100vh;
     width: 100%;
     flex-direction: row;
-    clip-path: circle(100px at 100% -15%);
-    -webkit-clip-path: circle(100px at 100% -15%);
+    clip-path: circle(10px at 100% -15%);
+    -webkit-clip-path: circle(10px at 100% -15%);
     transition: all 1s ease-in-out;
     pointer-events: none;
     border: 1.5vh solid $fourth;
@@ -358,7 +358,7 @@ section.sp-heading {
   //border: 1px solid red;
   width: 98.4%;
   height: 10%;
-  background-color: $third;
+  //background-color: $third;
   .frontpage-heading {
     font-size: 13vh;
     font-family: "Unica One", cursive;
@@ -731,13 +731,15 @@ section.sp-showcase {
   }
   // Frontpage //
   .frontpage-container {
-    grid-template-columns: 1fr;
     section.heading {
       display: inline;
+
       .fp-heading {
-        align-self: start;
-        .logo-link {
-          font-size: 5vh;
+        .frontpage-heading {
+          padding-top: 2rem;
+          font-size: 4vh;
+          .logo-link {
+          }
         }
       }
     }
@@ -763,7 +765,7 @@ section.sp-showcase {
     section.sp-heading {
       .frontpage-heading {
         padding-top: 2rem;
-        font-size: 5vh;
+        font-size: 4vh;
       }
     }
 
@@ -823,7 +825,7 @@ section.sp-showcase {
     section.sp-heading {
       .frontpage-heading {
         padding-top: 2rem;
-        font-size: 5vh;
+        font-size: 4vh;
       }
     }
     section.contact-showcase {
