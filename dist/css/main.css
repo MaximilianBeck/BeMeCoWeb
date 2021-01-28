@@ -184,7 +184,9 @@ section.nav {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 90%; }
+  grid-template-columns: 10% 30% 50%;
+  justify-items: center;
+  text-align: center; }
   section.nav .fp-nav {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -197,7 +199,6 @@ section.nav {
       height: 40vh; }
       section.nav .fp-nav .nav-list .nav-item {
         list-style: none;
-        align-content: flex-end;
         position: relative; }
         section.nav .fp-nav .nav-list .nav-item .nav-link {
           color: #ff4d00;
@@ -455,14 +456,15 @@ section.sp-showcase {
         align-items: center;
         position: relative; }
       .contact-showcase article.sc-info .ct-sc-info-wrapper .sp-info {
-        align-self: start;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
         border: 2px solid #163049;
         border-radius: 100px;
-        padding: 1rem;
+        padding: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         transition: all 0.3s ease-out;
         position: relative;
         top: 50%;
@@ -476,7 +478,9 @@ section.sp-showcase {
       .contact-showcase article.sc-info .ct-sc-info-wrapper .sp-info:hover {
         border: 2px solid #fff;
         border-radius: 100px;
-        padding: 0.5rem;
+        padding: 0rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
         box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15), 0 1px 2px 0 rgba(60, 64, 67, 0.3); }
     .contact-showcase article.sc-info .ct-sc-info-wrapper:hover .sc-info-mail {
       grid-row-start: 3;
@@ -530,7 +534,6 @@ section.sp-showcase {
         line-height: 1.5rem; }
         .service-container section.sp-top p.text-top .sp-1 {
           font-size: 4vh;
-          color: #ff4d00;
           z-index: 10; }
         .service-container section.sp-top p.text-top .sp-1::after {
           height: 0.25rem; }
