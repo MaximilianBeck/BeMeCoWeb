@@ -231,6 +231,7 @@ section.showcase {
   }
 }
 
+// FP Navigation //
 section.nav::before {
   content: "";
   position: absolute;
@@ -247,9 +248,7 @@ section.nav {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 30% 50%;
-  justify-items: center;
-  text-align: center;
+  grid-template-columns: 10% 90%;
   .fp-nav {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -264,92 +263,196 @@ section.nav {
       //width: 45vh;
       .nav-item {
         list-style: none;
-        //align-content: flex-end;
+        align-content: flex-end;
         position: relative;
         .nav-link {
           color: $first;
           font-weight: 700;
           transition: all 0.4s ease-in-out;
           -webkit-transition: all 0.4s ease-in-out;
-          border: 2px solid $third;
-          border-radius: 70px;
-          padding: 0.5rem;
-          padding-left: 1.5rem;
-          padding-right: 1.5rem;
+        }
+        .nav-link::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 3px;
+          display: block;
+          background: $fourth;
+          transition: all 0.4s ease-in-out;
+          -webkit-transition: all 0.4s ease-in-out;
+          opacity: 0;
+          right: 50%;
+          bottom: -5px;
+        }
+        .nav-link::before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 3px;
+          display: block;
+          background: $fourth;
+          transition: all 0.4s ease-in-out;
+          -webkit-transition: all 0.4s ease-in-out;
+          bottom: -5px;
+          opacity: 0;
+          left: 50%;
         }
         .nav-link:hover {
-          border: 2px solid $fourth;
-          color: $fourth;
-          padding: 0.25rem;
-          padding-left: 0.75rem;
-          padding-right: 0.75rem;
-          box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
-            0 1px 2px 0 rgba(60, 64, 67, 0.3);
+          &::after {
+            width: 50%;
+            background: $fourth;
+            opacity: 1;
+          }
         }
-        .active {
-          border: 2px solid $fourth;
-          color: $fourth;
-          padding: 0.25rem;
-          padding-left: 0.75rem;
-          padding-right: 0.75rem;
-          box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
-            0 1px 2px 0 rgba(60, 64, 67, 0.3);
+        .nav-link:hover::before {
+          width: 50%;
+          background: $fourth;
+          opacity: 1;
         }
-        // .nav-link::after {
-        //   content: "";
-        //   position: absolute;
-        //   width: 0;
-        //   height: 3px;
-        //   display: block;
-        //   background: $fourth;
-        //   transition: all 0.4s ease-in-out;
-        //   -webkit-transition: all 0.4s ease-in-out;
-        //   opacity: 0;
-        //   right: 50%;
-        //   bottom: -5px;
-        // }
-        // .nav-link::before {
-        //   content: "";
-        //   position: absolute;
-        //   width: 0;
-        //   height: 3px;
-        //   display: block;
-        //   background: $fourth;
-        //   transition: all 0.4s ease-in-out;
-        //   -webkit-transition: all 0.4s ease-in-out;
-        //   bottom: -5px;
-        //   opacity: 0;
-        //   left: 50%;
-        // }
-        // .nav-link:hover {
-        //   &::after {
-        //     width: 50%;
-        //     background: $fourth;
-        //     opacity: 1;
-        //   }
-        // }
-        // .nav-link:hover::before {
-        //   width: 50%;
-        //   background: $fourth;
-        //   opacity: 1;
-        // }
-        //a:hover {
-        // a.active::after {
-        //   content: "";
-        //   position: absolute;
-        //   display: block;
-        //   height: 3px;
-        //   width: 100%;
-        //   background: $fourth;
-        //   left: 0;
-        //   transition-delay: 100s;
-        //   bottom: -5px;
-        //   opacity: 1;
-        // }
+        a:hover {
+          text-decoration: none;
+          //color: $first;
+        }
+        a.active {
+          text-decoration: none;
+          //color: $fourth;
+        }
+        a.active::after {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 3px;
+          width: 100%;
+          background: $fourth;
+          left: 0;
+          transition-delay: 100s;
+          bottom: -5px;
+          opacity: 1;
+        }
       }
     }
   }
 }
+
+// section.nav::before {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   width: 0.5vh;
+//   background-color: $second;
+//   height: 40vh;
+// }
+// section.nav {
+//   grid-row-start: 2;
+//   grid-row-end: 3;
+//   grid-column-start: 4;
+//   grid-column-end: 6;
+//   height: 100%;
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: 10% 30% 50%;
+//   justify-items: center;
+//   text-align: center;
+//   .fp-nav {
+//     grid-column-start: 2;
+//     grid-column-end: 3;
+//     font-size: 4vh;
+//     .nav-list {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: start;
+//       justify-content: space-evenly;
+//       //border: 3px solid black;
+//       height: 40vh;
+//       //width: 45vh;
+//       .nav-item {
+//         list-style: none;
+//         //align-content: flex-end;
+//         position: relative;
+//         .nav-link {
+//           color: $first;
+//           font-weight: 700;
+//           transition: all 0.4s ease-in-out;
+//           -webkit-transition: all 0.4s ease-in-out;
+//           border: 2px solid $third;
+//           border-radius: 70px;
+//           padding: 0.5rem;
+//           padding-left: 1.5rem;
+//           padding-right: 1.5rem;
+//         }
+//         .nav-link:hover {
+//           border: 2px solid $fourth;
+//           color: $fourth;
+//           padding: 0.25rem;
+//           padding-left: 0.75rem;
+//           padding-right: 0.75rem;
+//           box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
+//             0 1px 2px 0 rgba(60, 64, 67, 0.3);
+//         }
+//         .active {
+//           border: 2px solid $fourth;
+//           color: $fourth;
+//           padding: 0.25rem;
+//           padding-left: 0.75rem;
+//           padding-right: 0.75rem;
+//           box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
+//             0 1px 2px 0 rgba(60, 64, 67, 0.3);
+//         }
+//         // .nav-link::after {
+//         //   content: "";
+//         //   position: absolute;
+//         //   width: 0;
+//         //   height: 3px;
+//         //   display: block;
+//         //   background: $fourth;
+//         //   transition: all 0.4s ease-in-out;
+//         //   -webkit-transition: all 0.4s ease-in-out;
+//         //   opacity: 0;
+//         //   right: 50%;
+//         //   bottom: -5px;
+//         // }
+//         // .nav-link::before {
+//         //   content: "";
+//         //   position: absolute;
+//         //   width: 0;
+//         //   height: 3px;
+//         //   display: block;
+//         //   background: $fourth;
+//         //   transition: all 0.4s ease-in-out;
+//         //   -webkit-transition: all 0.4s ease-in-out;
+//         //   bottom: -5px;
+//         //   opacity: 0;
+//         //   left: 50%;
+//         // }
+//         // .nav-link:hover {
+//         //   &::after {
+//         //     width: 50%;
+//         //     background: $fourth;
+//         //     opacity: 1;
+//         //   }
+//         // }
+//         // .nav-link:hover::before {
+//         //   width: 50%;
+//         //   background: $fourth;
+//         //   opacity: 1;
+//         // }
+//         //a:hover {
+//         // a.active::after {
+//           // content: "";
+//           // position: absolute;
+//           // display: block;
+//           // height: 3px;
+//           // width: 100%;
+//           // background: $fourth;
+//           // left: 0;
+//           // transition-delay: 100s;
+//           // bottom: -5px;
+//           // opacity: 1;
+//         // }
+//       }
+//     }
+//   }
+// }
 
 // Servicepage // Servicepage // Servicepage // Servicepage //
 
